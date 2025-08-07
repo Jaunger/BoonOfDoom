@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4590836889768678958
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3940249846898874172, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: TriggerBossFight.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940249846898874172, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: TriggerBossFight.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234042135269288840, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.537345
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234042135269288840, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234042135269288840, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.537345
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 141.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508815774926445515, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331527657556387403, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}
+      propertyPath: m_Name
+      value: Fog Wall Interactable Frank
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 560fb7180ad641343b344f16cd7e7453, type: 3}

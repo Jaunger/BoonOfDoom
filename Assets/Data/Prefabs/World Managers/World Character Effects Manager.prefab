@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6145110650167574157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2252209661852987965}
+  - component: {fileID: 6760903694851215991}
+  m_Layer: 0
+  m_Name: World Character Effects Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2252209661852987965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145110650167574157}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 568.433, y: 322.34576, z: -3.3853734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6760903694851215991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145110650167574157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea51b227c1c60614d91b091a4236fa02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSplatterVFX: {fileID: 1922229424932185930, guid: ce44e12abcf6f3d4ab015fdae699c698, type: 3}
+  healingVFX: {fileID: 9017484664307500583, guid: 1245b8d2997d5b34fb1637be70a7eb05, type: 3}
+  deadSpotVFX: {fileID: 827466851711060306, guid: a5330d3528c3e3a459200adfc3943c23, type: 3}
+  takeDamageEffect: {fileID: 11400000, guid: 7bd3dd3c596ccac48939043452a3602c, type: 2}
+  takeBlockedDamageEffect: {fileID: 11400000, guid: 3bf1d0aac55d42547b1108b9de7e1e25, type: 2}
+  takeFocusDamageEffect: {fileID: 11400000, guid: 24aa89d9c0dafe64d90bf23df4444585, type: 2}
+  instantEffects:
+  - {fileID: 11400000, guid: 82f4d16e309f94e428f0525b67cd38a6, type: 2}
+  - {fileID: 11400000, guid: 7bd3dd3c596ccac48939043452a3602c, type: 2}
+  - {fileID: 11400000, guid: 3bf1d0aac55d42547b1108b9de7e1e25, type: 2}
+  staticEffects:
+  - {fileID: 11400000, guid: cd3f50c016ed892489af91c65f20ba42, type: 2}
+  - {fileID: 11400000, guid: de31a6beef888e84abea734f91cc7599, type: 2}
+  - {fileID: 11400000, guid: 81f4c33f9e3bb6844b80cb9f804aa0f8, type: 2}
+  - {fileID: 11400000, guid: 01ee6fd0ceec2384b8ef378f6f43a8df, type: 2}
+  runtimeEffects:
+  - {fileID: 11400000, guid: b7c04ec694b5e63449295c3c14325537, type: 2}
+  - {fileID: 11400000, guid: d428afe55d3467644b5e61c12b1399fd, type: 2}
+  - {fileID: 11400000, guid: 4881072af8261234bbb2f3a92b5ba300, type: 2}
