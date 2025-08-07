@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3161e4992e9913a478d34f8f58e7b649, type: 3}
+  m_Name: Medium Shield
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemIcon: {fileID: 0}
+  itemDescription: 
+  itemID: 0
+  weaponAnimator: {fileID: 0}
+  weaponModel: {fileID: 0}
+  strengthREQ: 0
+  dexREQ: 0
+  intREQ: 0
+  faithREQ: 0
+  physicalDamage: 0
+  magicDamage: 0
+  fireDamage: 0
+  lightningDamage: 0
+  holyDamage: 0
+  poiseDamage: 0
+  light_attack_01_Modifier: 1
+  light_attack_02_Modifier: 1.2
+  heavy_attack_01_Modifier: 1.3
+  charged_heavy_attack_01_Modifier: 1.7
+  running_attack_Modifier: 1.5
+  rolling_attack_Modifier: 1.5
+  backstep_attack_Modifier: 1.5
+  baseStaminaCost: 20
+  lightAttackCostModifier: 1
+  heavyAttackCostModifier: 1.5
+  chargedAttackCostModifier: 2
+  RunningAttackCostModifier: 1.5
+  RollingAttackCostModifier: 1.5
+  BackstepAttackCostModifier: 1.5
+  oh_RB_Action: {fileID: 0}
+  oh_RT_Action: {fileID: 0}
+  whooshSounds: []
