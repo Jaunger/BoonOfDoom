@@ -42,7 +42,6 @@ A Unity-based action RPG game featuring deep combat mechanics, weapon progressio
 ### **Combat Mechanics**
 - **Souls-like Combat**: Precision-based combat with stamina management
 - **Weapon Variety**: Multiple weapon types with unique movesets
-- **Two-Handing**: Ability to two-hand weapons for different combat styles
 - **Lock-On System**: Target locking for precise combat
 - **Combo System**: Chain attacks with timing-based combos
 
@@ -158,10 +157,8 @@ Assets/Data/
 
 ### **Combat System**
 - **Stamina Management**: All actions consume stamina
-- **Poise System**: Heavy attacks can stagger enemies
 - **Blocking**: Weapons can block incoming damage
 - **Dodging**: Evasive maneuvers with invincibility frames
-- **Two-Handing**: Grip weapons with both hands for power
 
 ### **Weapon Progression**
 - **Experience System**: Weapons gain experience through combat
