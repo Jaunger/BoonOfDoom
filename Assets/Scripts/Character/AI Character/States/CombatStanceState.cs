@@ -38,8 +38,9 @@ public class CombatStanceState : AIState
         if (!aiCharacter.navMeshAgent.enabled)
             aiCharacter.navMeshAgent.enabled = true;
 
-        if (aiCharacter.aiCharacterCombatManager.currentTarget.isDead)
-            aiCharacter.aiCharacterCombatManager.SetTarget(null);
+        if (aiCharacter.aiCharacterCombatManager.currentTarget != null)
+            if (aiCharacter.aiCharacterCombatManager.currentTarget.isDead)
+                aiCharacter.aiCharacterCombatManager.SetTarget(null);
 
         if (aiCharacter.aiCharacterCombatManager.canPivot)
         {

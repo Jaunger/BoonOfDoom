@@ -480,12 +480,11 @@ public class PlayerManager : CharacterManager
 
 
 
-        //  Load equipment TODO: armor and stuff
 
         playerInventoryManager.rightHandWeaponIndex = currentCharacterData.rightWeaponIndex;
         playerInventoryManager.weaponsInRightHandSlots[0] = currentCharacterData.rightWeapon01.GetWeapon();
         playerInventoryManager.weaponsInRightHandSlots[1] = currentCharacterData.rightWeapon02.GetWeapon();
-        playerInventoryManager.weaponsInRightHandSlots[2] = currentCharacterData.rightWeapon03.GetWeapon();
+        //playerInventoryManager.weaponsInRightHandSlots[2] = currentCharacterData.rightWeapon03.GetWeapon();
 
         if (currentCharacterData.quickSlot01 != null)
         {
@@ -496,7 +495,7 @@ public class PlayerManager : CharacterManager
         if (currentCharacterData.rightWeaponIndex >= 0)
         {
             playerInventoryManager.currentRightWeapon = playerInventoryManager.weaponsInRightHandSlots[currentCharacterData.rightWeaponIndex];
-            currentRightWeaponID = playerInventoryManager.weaponsInRightHandSlots[currentCharacterData.rightWeaponIndex].itemID;
+            //currentRightWeaponID = playerInventoryManager.weaponsInRightHandSlots[currentCharacterData.rightWeaponIndex].itemID;
         }
         else
         {
@@ -505,11 +504,11 @@ public class PlayerManager : CharacterManager
 
         //TODO: add more stuff to load
         playerInventoryManager.itemsInInventory.Clear();
-        for (int i = 0; i < currentCharacterData.weaponsInventory.Count; i++)
-        {
-            WeaponItem weaponInInventory = currentCharacterData.weaponsInventory[i].GetWeapon();
-            playerInventoryManager.AddItemToInventory(weaponInInventory);
-        }
+        //for (int i = 0; i < currentCharacterData.weaponsInventory.Count; i++)
+        //{
+        //    WeaponItem weaponInInventory = currentCharacterData.weaponsInventory[i].GetWeapon();
+        //    playerInventoryManager.AddItemToInventory(weaponInInventory);
+        //}
 
         //for (int i = 0; i < currentCharacterData.headEquipmentInInventory.Count; i++)
         //{

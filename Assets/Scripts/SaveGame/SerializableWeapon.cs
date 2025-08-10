@@ -5,6 +5,8 @@ using UnityEngine;
 public class SerializableWeapon : ISerializationCallbackReceiver  
 {
     [SerializeField] public int itemID;
+    [SerializeField] public int weaponExp = 0;
+    [SerializeField] public int weaponLevel = 0;
     [SerializeField] public List<int> unlockedSkillNodeIndices = new();
 
     public WeaponItem GetWeapon()
@@ -14,6 +16,9 @@ public class SerializableWeapon : ISerializationCallbackReceiver
         var skillMgr = WeaponSkillManager.Instance;
         WeaponSkillTree tree = skillMgr.GetSharedRuntimeTree(itemID);
         weapon.runtimeSkillTree = tree;
+
+        weapon.currentWeaponEXP = weaponExp;
+        weapon.weaponLevel = weaponLevel;
 
         var unlockMgr = Object.FindFirstObjectByType<WeaponSkillUnlockManager>(); 
 

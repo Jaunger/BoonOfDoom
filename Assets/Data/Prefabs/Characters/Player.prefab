@@ -1227,7 +1227,7 @@ MonoBehaviour:
   basePoiseDefense: 0
   defaultPoiseResetTime: 8
   poiseResetTimer: 0
-  staminaRegenAmount: 0.2
+  staminaRegenAmount: 1
   staminaRegenDelay: 0.5
   frontalPoiseAbsorption: 0
   boneBreakerPoiseBonus: 0

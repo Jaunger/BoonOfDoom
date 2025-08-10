@@ -20,11 +20,7 @@ MonoBehaviour:
   weaponType: 1
   weaponModel: {fileID: 2657308247753337770, guid: 2914188f6a70e8e4da5235b707e38a81, type: 3}
   weaponClass: 1
-  strengthREQ: 0
-  dexREQ: 0
-  intREQ: 0
-  faithREQ: 0
-  weaponElement: 0
+  weaponElement: 2
   physicalDamage: 50
   magicDamage: 0
   fireDamage: 0
@@ -62,7 +58,7 @@ MonoBehaviour:
   maxWeaponEXP: 100
   weaponSkillTree: {fileID: 11400000, guid: 5285a887df8dc494eb7bc893f3edcafa, type: 2}
   runtimeSkillTree: {fileID: 0}
-  specialAbilityAction: {fileID: 0}
+  specialAbilityAction: {fileID: 11400000, guid: 054a419a7460396449163235cbdd21a8, type: 2}
   specialAbilityActionID: -1
   specialAbilityActionAlt: {fileID: 0}
   whooshSounds: []

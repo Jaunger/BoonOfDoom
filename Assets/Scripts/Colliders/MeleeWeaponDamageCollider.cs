@@ -60,7 +60,7 @@ public class MeleeWeaponDamageCollider : DamageCollider
             }
             else if (other.TryGetComponent(out BreakableObject b))
             {
-                Debug.Log($"DamageCollider: {b.name} hit by {characterCausingDamage.name}");
+                //Debug.Log($"DamageCollider: {b.name} hit by {characterCausingDamage.name}");
                 b.OnDamageReceived(puzzleHit);
             }
             else if (other.TryGetComponent(out PressurePlate p))
@@ -69,7 +69,7 @@ public class MeleeWeaponDamageCollider : DamageCollider
             }
             else if (other.TryGetComponent(out TimedTorch torch))
             {
-                Debug.Log($"[MeleeCollider] Found TimedTorch index {torch.torchIndex}");
+                //Debug.Log($"[MeleeCollider] Found TimedTorch index {torch.torchIndex}");
                 torch.OnDamageReceived(puzzleHit);
             }
             else if (other.TryGetComponent(out BreakableRope rope))

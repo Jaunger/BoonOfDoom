@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199d232c100851c47970de4028eb5835, type: 3}
   m_Name: Sword_FlameInfuse
   m_EditorClassIdentifier: 
-  skillName: 'Flame Infuse '
+  skillName: Flame Infuse
   skillDescription: '"Temporarily enflames your weapon, enhancing damage while draining
     energy." '
   skillType: 1
@@ -24,6 +24,7 @@ MonoBehaviour:
   requiredWeaponLevel: 1
   runeCost: 200
   staticEffectIDs: 02000000
+  runtimeEffectIDs: 
   applyOnEquip: 0
   connectedNodes:
   - {fileID: 11400000, guid: 96285be51655daa43b367f4677bf95a0, type: 2}

@@ -8,6 +8,8 @@ public class FlameInfuseAction : WeaponItemAction
         var wm = player.playerEquipmentManager.rightWeaponManager;
         if (wm == null) return;
 
+        if (!weapon.runtimeSkillTree.HasUnlockedNode("Flame Infuse")) return;
+
         if (wm.isFlaming)
             wm.DeactivateFlame();   // manual-off
         else

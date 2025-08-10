@@ -19,10 +19,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 22100000, guid: 0ca5176bbaa5a8c468508245bab06b65, type: 2}
   weaponType: 0
   weaponModel: {fileID: 213296428127029102, guid: ba9227aaedfec2c46a82c843602bc7d2, type: 3}
-  strengthREQ: 0
-  dexREQ: 0
-  intREQ: 0
-  faithREQ: 0
+  weaponClass: 0
   weaponElement: 0
   physicalDamage: 32
   magicDamage: 0
@@ -63,7 +60,7 @@ MonoBehaviour:
   runtimeSkillTree: {fileID: 0}
   specialAbilityAction: {fileID: 11400000, guid: 80f2a787a3e3c6f45a791893165c7be0, type: 2}
   specialAbilityActionID: 2
-  specialAbilityActionAlt: {fileID: 0}
+  specialAbilityActionAlt: {fileID: 11400000, guid: fcaf7dcaf24d03341bc9a303e7917bf9, type: 2}
   whooshSounds:
   - {fileID: 8300000, guid: 9f86e1a4a001e72429d81a86cdda5508, type: 3}
   blockSounds: []

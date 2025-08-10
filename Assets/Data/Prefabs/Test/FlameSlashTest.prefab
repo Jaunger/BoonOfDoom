@@ -104,7 +104,7 @@ MonoBehaviour:
   damageCollider: {fileID: 151276870232871116}
   physicalDamage: 0
   magicDamage: 0
-  fireDamage: 0
+  fireDamage: 30
   lightningDamage: 0
   holyDamage: 0
   element: 1

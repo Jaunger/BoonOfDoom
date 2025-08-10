@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7274fb14f2b864abfe3561844c7961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropItemChance: 10
+  dropItemChance: 0
   droppableItems: []
 --- !u!1 &470978300181484352
 GameObject:

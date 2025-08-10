@@ -38,14 +38,14 @@ public class WeaponShrineInteractable : Interactable
 
         WeaponItem newWeapon = Instantiate(weaponToGrant);
 
-        inv.weaponsInRightHandSlots[0] = newWeapon;
-        inv.currentRightWeapon = newWeapon;
+        //inv.weaponsInRightHandSlots[0] = newWeapon;
+        //inv.currentRightWeapon = newWeapon;
         inv.AddItemToInventory(newWeapon);
 
         if (!inv.unlockedWeaponIDs.Contains(newWeapon.itemID))
             inv.unlockedWeaponIDs.Add(newWeapon.itemID);
 
-        player.playerEquipmentManager.LoadRightWeapon();
+        //player.playerEquipmentManager.LoadRightWeapon();
         
         finishTutorialGameObject.SetActive(true);
         HideOtherShrines();

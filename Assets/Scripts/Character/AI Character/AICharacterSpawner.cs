@@ -75,6 +75,9 @@ public class AICharacterSpawner : MonoBehaviour
         if (aICharacter == null)
             return;
 
+        if (aICharacter is AIBossCharacterManager)
+            return;
+
         instantiateGameObject.transform.position = transform.position;
         instantiateGameObject.transform.rotation = transform.rotation;
         aICharacter.characterStatManager.currentHealth = aICharacter.characterStatManager.maxHealth;

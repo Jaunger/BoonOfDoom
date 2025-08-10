@@ -222,6 +222,8 @@ public class WorldSaveGameManager : MonoBehaviour
     {
         SerializableWeapon sWeapon = new SerializableWeapon();
         sWeapon.itemID = weapon.itemID;
+        sWeapon.weaponExp = weapon.currentWeaponEXP;
+        sWeapon.weaponLevel = weapon.weaponLevel;
         sWeapon.CaptureRuntimeData(weapon);
         return sWeapon;
     }
