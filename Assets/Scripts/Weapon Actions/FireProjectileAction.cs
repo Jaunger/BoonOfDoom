@@ -35,7 +35,7 @@ public class FireProjectileAction : WeaponItemAction
 
                 break;
             default:
-                Debug.LogError("Unknown projectile slot type.");
+                //Debug.LogError("Unknown projectile slot type.");
                 return;
         }
 
@@ -76,7 +76,7 @@ public class FireProjectileAction : WeaponItemAction
         }
         else
         {
-            Debug.LogError("No right weapon equipped to load projectile.");
+            //Debug.LogError("No right weapon equipped to load projectile.");
             return;
         }
 

@@ -51,7 +51,7 @@ public class PlayerUITeleportLocationManager : MonoBehaviour
                     else
                     {
                         teleportLocations[i].SetActive(false);
-                        Debug.Log("Teleport location " + WorldObjectManager.instance.braziers[j].gameObject.name + " is false.");
+                        //Debug.Log("Teleport location " + WorldObjectManager.instance.braziers[j].gameObject.name + " is false.");
 
                     }
                 }

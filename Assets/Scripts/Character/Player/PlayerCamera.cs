@@ -119,7 +119,7 @@ public class PlayerCamera : MonoBehaviour
         upAndDownLookAngle = Mathf.Clamp(upAndDownLookAngle, minimumPivot, maximumPivot);
 
         cameraRotationY.y = leftAndRightLookAngle;
-        Debug.Log($"Left and Right Look Angle: {leftAndRightLookAngle}");
+        //Debug.Log($"Left and Right Look Angle: {leftAndRightLookAngle}");
         cameraRotationX.x = upAndDownLookAngle;
 
         cameraObject.transform.eulerAngles = new Vector3(upAndDownLookAngle, leftAndRightLookAngle, 0);

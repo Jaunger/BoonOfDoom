@@ -4,7 +4,7 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     public float requiredMass = 40f;                 // 0 for HeavyImpact-only
-    public PlatePuzzleController controller;         // assign in Inspector
+    public PlatePuzzleController controller;        
 
     private bool pressed = false;
 
@@ -23,7 +23,7 @@ public class PressurePlate : MonoBehaviour
         if (other.attachedRigidbody &&
             other.attachedRigidbody.mass >= requiredMass)
         {
-            SetPressed(false);
+            //SetPressed(false);
         }
     }
 

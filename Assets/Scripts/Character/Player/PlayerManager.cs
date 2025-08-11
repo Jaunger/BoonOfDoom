@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : CharacterManager
 {
-    [Header("DEBUG MENU")]
+    [Header("Debug MENU")]
     [SerializeField] private bool respawnCharacter = false; //  TODO: delete 
     [SerializeField] private bool switchRightWeapon = false;
 
@@ -108,7 +108,7 @@ public class PlayerManager : CharacterManager
         get { return _currentLeftWeaponID; }
         set
         {
-            //Debug.Log("switch left");
+            ////Debug.Log("switch left");
             _currentLeftWeaponID = value;
             //WeaponItem newWeapon = Instantiate(WorldItemDatabase.instance.GetWeaponByID(_currentLeftWeaponID));
             //playerInventoryManager.currentLeftWeapon = newWeapon;
@@ -266,7 +266,7 @@ public class PlayerManager : CharacterManager
 
         playerLocomitionManager.HandleAllMovement();
         characterStatManager.RegenerateStamina();
-        DebugMenu();
+        //DebugMenu();
     }
 
     protected override void Start()
@@ -391,7 +391,7 @@ public class PlayerManager : CharacterManager
             if (!unlockedWeaponIDs.Contains(playerInventoryManager.weaponsInRightHandSlots[i].itemID))
             {
                 unlockedWeaponIDs.Add(playerInventoryManager.weaponsInRightHandSlots[i].itemID);
-                Debug.Log("Adding weapon to unlocked list: " + playerInventoryManager.weaponsInRightHandSlots[i].itemID);
+                //Debug.Log("Adding weapon to unlocked list: " + playerInventoryManager.weaponsInRightHandSlots[i].itemID);
             }
         }
 
@@ -579,7 +579,7 @@ public class PlayerManager : CharacterManager
             }
             else
             {
-                Debug.LogError("No right weapon equipped to release arrow.");
+                //Debug.LogError("No right weapon equipped to release arrow.");
                 return;
             }
 

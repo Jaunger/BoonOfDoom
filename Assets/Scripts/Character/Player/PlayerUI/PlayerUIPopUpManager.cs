@@ -39,7 +39,7 @@ public class PlayerUIPopUpManager : MonoBehaviour
     public void SendYouDiedPopUp()
     {
         //  Active post processing effects
-        Debug.Log("You Died Pop Up Triggered");
+        //Debug.Log("You Died Pop Up Triggered");
         youDiedPopUpGameObject.SetActive(true);
         youDiedPopUpBackgroundText.characterSpacing = 0;
         StartCoroutine(StretchPopUPTextOverTime(youDiedPopUpBackgroundText, 8, 20f));

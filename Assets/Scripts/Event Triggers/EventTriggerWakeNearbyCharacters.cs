@@ -10,7 +10,7 @@ public class EventTriggerWakeNearbyCharacters : MonoBehaviour
         PlayerManager player = Object.FindFirstObjectByType<PlayerManager>();
         if (player == null)
         {
-            Debug.LogError("PlayerManager not found in the scene.");
+            //Debug.LogError("PlayerManager not found in the scene.");
             return;
         }
 

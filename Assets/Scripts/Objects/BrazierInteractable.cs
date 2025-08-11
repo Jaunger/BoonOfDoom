@@ -93,7 +93,7 @@ public class BrazierInteractable : Interactable
     private void RestAtBrazier(PlayerManager player)
     {
         PlayerUIManager.instance.bonfireManager.OpenBonfireMenu();
-        Debug.Log("Resting at brazier");
+        //Debug.Log("Resting at brazier");
         interactCollider.enabled = true; // temp -> should enable after ui close
         player.playerStatManager.currentHealth = player.playerStatManager.maxHealth;
         player.playerStatManager.SetStamina(player.playerStatManager.maxStamina);
@@ -138,12 +138,12 @@ public class BrazierInteractable : Interactable
 
     public void TeleportToSiteOfGrace()
     {
-        Debug.Log("trying to teleport" + teleportTransform);
+        //Debug.Log("trying to teleport" + teleportTransform);
         // Find the player in the scene
         PlayerManager player = Object.FindFirstObjectByType<PlayerManager>();
         if (player == null)
         {
-            Debug.LogError("PlayerManager not found in the scene.");
+            //Debug.LogError("PlayerManager not found in the scene.");
             return;
         }
 

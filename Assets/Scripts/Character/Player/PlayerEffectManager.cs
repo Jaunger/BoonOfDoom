@@ -36,7 +36,7 @@ public class PlayerEffectManager : CharacterEffectsManager
                 {
                     var fx = WorldCharacterEffectsManager.instance.staticEffects[id];
                     AddStaticEffect(fx);
-                    Debug.Log($"Applied static effect: {fx.name} from node {node.skillName}");
+                    //Debug.Log($"Applied static effect: {fx.name} from node {node.skillName}");
                 }
             }
         }
@@ -56,7 +56,7 @@ public class PlayerEffectManager : CharacterEffectsManager
                 {
                     var fx = WorldCharacterEffectsManager.instance.runtimeEffects[id];
                     AddRuntimeEffect(fx);
-                    Debug.Log($"Applied static effect: {fx.name} from node {node.skillName}");
+                    //Debug.Log($"Applied static effect: {fx.name} from node {node.skillName}");
                 }
             }
         }

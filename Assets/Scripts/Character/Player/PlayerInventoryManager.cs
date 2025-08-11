@@ -59,7 +59,7 @@ public class PlayerInventoryManager : CharacterInventoryManager
 
         if (item is WeaponItem weapon)
         {
-            Debug.Log("picked weapon: " + weapon.itemName); 
+            //Debug.Log("picked weapon: " + weapon.itemName); 
             for (int i = 0; i < weaponsInRightHandSlots.Length; i++)
             {
                 WeaponItem slotWeapon = weaponsInRightHandSlots[i];

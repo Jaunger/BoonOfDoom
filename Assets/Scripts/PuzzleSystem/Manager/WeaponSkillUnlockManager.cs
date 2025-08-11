@@ -14,7 +14,7 @@ public class WeaponSkillUnlockManager : MonoBehaviour
     {
         if (player == null || player.playerInventoryManager.currentRightWeapon == null || targetWeapon == null)
         {
-            Debug.LogWarning("Player or weapon is missing.");
+            //.LogWarning("Player or weapon is missing.");
             return false;
         }
 
@@ -29,43 +29,43 @@ public class WeaponSkillUnlockManager : MonoBehaviour
 
         if (tree == null)
         {
-            Debug.LogWarning("Weapon has no skill tree assigned.");
+            ////Debug.LogWarning("Weapon has no skill tree assigned.");
             return false;
         }
 
         // Ensure this node belongs to the runtime clone
         if (!tree.nodes.Contains(skillNode))
         {
-            Debug.LogWarning("Attempted to unlock a node from the original asset instead of the clone.");
+            ////Debug.LogWarning("Attempted to unlock a node from the original asset instead of the clone.");
             return false;
         }
 
         // Check prerequisites
         if (skillNode.isUnlocked)
         {
-            Debug.Log("Cannot unlock skill: already unlocked.");
+            //Debug.Log("Cannot unlock skill: already unlocked.");
             return false;
         }
         if (!PlayerUIManager.instance.playerUISkillTreeManager.IsSkillAvailable(skillNode))
         {
-            Debug.Log("Cannot unlock skill: prerequisites not met.");
+            //Debug.Log("Cannot unlock skill: prerequisites not met.");
             return false;
         }
         if (weapon.weaponLevel < skillNode.requiredWeaponLevel)
         {
-            Debug.Log("Cannot unlock skill: weapon level too low.");
+            //Debug.Log($"Cannot unlock skill: weapon level too low. (Current: {weapon.weaponLevel}, Required: {skillNode.requiredWeaponLevel})");
             return false;
         }
         if (player.playerStatManager.souls < skillNode.runeCost)
         {
-            Debug.Log("Cannot unlock skill: not enough runes.");
+            //Debug.Log("Cannot unlock skill: not enough runes.");
             return false;
         }
 
         // Deduct cost and unlock
         player.playerStatManager.AddSouls(-skillNode.runeCost);
         skillNode.isUnlocked = true;
-        Debug.Log($"Skill Unlocked: {skillNode.skillName}");
+        //Debug.Log($"Skill Unlocked: {skillNode.skillName}");
 
         // Stat enhancement
         if (skillNode.skillType == WeaponSkillType.StatEnhancement)
@@ -113,7 +113,7 @@ public class WeaponSkillUnlockManager : MonoBehaviour
         var lightAction = weapon.oh_RB_Action as LightAttackWeaponItemAction;
         if (lightAction == null)
         {
-            Debug.LogWarning("Cannot add combo: RB action is not LightAttackWeaponItemAction.");
+            //Debug.LogWarning("Cannot add combo: RB action is not LightAttackWeaponItemAction.");
             return;
         }
 
@@ -130,7 +130,7 @@ public class WeaponSkillUnlockManager : MonoBehaviour
             {
                 lightAction.lightAttackAnimations.Add(combo);
             }
-            Debug.Log($"[Combo] Added {combo} to {weapon.itemName}");
+            //Debug.Log($"[Combo] Added {combo} to {weapon.itemName}");
         }
     }
 
@@ -144,11 +144,11 @@ public class WeaponSkillUnlockManager : MonoBehaviour
             else
                 weapon.specialAbilityActionAlt = action;         // second slot → Slash
 
-            Debug.Log($"[Ability] Assigned {action.name} to {weapon.itemName}");
+            //Debug.Log($"[Ability] Assigned {action.name} to {weapon.itemName}");
         }
         else
         {
-            Debug.LogWarning($"Special ability ID {actionID} not found.");
+            //Debug.LogWarning($"Special ability ID {actionID} not found.");
         }
     }
 

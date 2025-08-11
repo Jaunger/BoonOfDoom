@@ -69,7 +69,7 @@ public class PlayerCombatManager : CharacterCombatManager
         //  Perform action
         if (weaponAction == null)
         {
-            Debug.Log("No action to perform");
+            //Debug.Log("No action to perform");
             return;
         }
         weaponAction.AttemptToPerformAction(player, weaponPerformingAction);
@@ -142,7 +142,7 @@ public class PlayerCombatManager : CharacterCombatManager
 
         if (player.playerEffectManager.activeDrawnProjectileFX != null)
             Destroy(player.playerEffectManager.activeDrawnProjectileFX);
-        Debug.Log("Releasing arrow.");
+        //Debug.Log("Releasing arrow.");
         player.characterSoundFXManager.PlaySoundFX(WorldSoundFXManager.instance.ChooseRandomSFXFromArray(WorldSoundFXManager.instance.releaseArrowSFX));
 
         Animator bowAnimtor;
@@ -153,7 +153,7 @@ public class PlayerCombatManager : CharacterCombatManager
         }
         else
         {
-            Debug.LogError("No right weapon equipped to release arrow.");
+            //Debug.LogError("No right weapon equipped to release arrow.");
             return;
         }
 
@@ -177,7 +177,7 @@ public class PlayerCombatManager : CharacterCombatManager
               
                 break;
             default:
-                Debug.LogError("Unknown projectile slot type.");
+                //Debug.LogError("Unknown projectile slot type.");
                 return;
         }
 
@@ -187,7 +187,7 @@ public class PlayerCombatManager : CharacterCombatManager
         if (projectileItem.currentAmmo <= 0)
             return;
 
-        Debug.Log("Releasing projectile: " + projectileItem.itemName + " with ID: " + projectileItem.itemID);
+        //Debug.Log("Releasing projectile: " + projectileItem.itemName + " with ID: " + projectileItem.itemID);
 
         Transform projectileInstantiationLocation;
         GameObject liveProjectileGameObject;
@@ -246,7 +246,7 @@ public class PlayerCombatManager : CharacterCombatManager
         foreach (Collider hitBox in ignoreColliders)
             Physics.IgnoreCollision(liveProjectileDamageCollider.damageCollider, hitBox, true);
 
-        Debug.Log(liveProjectileGameObject.transform.forward);
+        //Debug.Log(liveProjectileGameObject.transform.forward);
         liveProjectileRigidbody.AddForce(liveProjectileGameObject.transform.forward * projectileItem.forwardVelocity);
         liveProjectileGameObject.transform.parent = null;
 
@@ -277,7 +277,7 @@ public class PlayerCombatManager : CharacterCombatManager
             if (node.isUnlocked && node.skillName == "Bone Breaker")
             {
                 player.playerStatManager.currentPoiseDamageMultiplier += 0.20f;
-                Debug.Log("[BoneBreaker] Bonus poise multiplier applied");
+                //Debug.Log("[BoneBreaker] Bonus poise multiplier applied");
                 return;
             }
         }
@@ -329,7 +329,7 @@ public class PlayerCombatManager : CharacterCombatManager
         // Notify listeners (Seismic Wave will subscribe later)
         if (ChargedSlamImpact != null)
         {
-            Debug.Log("[ChargedSlamImpact] Invoking event at position: " + transform.position);
+            //Debug.Log("[ChargedSlamImpact] Invoking event at position: " + transform.position);
             ChargedSlamImpact.Invoke(transform.position);
         }
         // Optional: ground-impact VFX / SFX

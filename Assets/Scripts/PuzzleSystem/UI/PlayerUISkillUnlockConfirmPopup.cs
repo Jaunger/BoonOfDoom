@@ -38,7 +38,7 @@ public class PlayerUISkillUnlockConfirmPopup : MonoBehaviour
 
         WeaponItem temp = null;
 
-        foreach (var weapon in PlayerUIManager.instance.player.playerInventoryManager.GetUnlockedWeapons())
+        foreach (var weapon in PlayerUIManager.instance.player.playerInventoryManager.weaponsInRightHandSlots)
         {
             if (weapon.runtimeSkillTree != null && weapon.runtimeSkillTree.nodes.Contains(pendingSkillNode))
             {
@@ -59,7 +59,7 @@ public class PlayerUISkillUnlockConfirmPopup : MonoBehaviour
         }
         else
         {
-            PlayerUIManager.instance.playerUISkillTreeManager.ShowFeedbackMessage("Not enough runes.");
+            PlayerUIManager.instance.playerUISkillTreeManager.ShowFeedbackMessage("Not enough runes/levels");
         }
 
 

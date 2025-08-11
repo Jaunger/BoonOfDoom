@@ -140,7 +140,7 @@ public class AIBossCharacterManager : AICharacterManager
                 fogWalls.Add(fogWall);
                 fogWall.bossId = bossID;
             }
-            Debug.Log("Found fog wall with ID: " + fogWalls.Count);
+            //Debug.Log("Found fog wall with ID: " + fogWalls.Count);
         }
     }
 

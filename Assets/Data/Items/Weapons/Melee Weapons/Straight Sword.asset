@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Straight Sword
   m_EditorClassIdentifier: 
   itemName: Straight Sword
-  itemIcon: {fileID: 21300000, guid: ad69c5d2bbaef7c4c9e481ba2100b93f, type: 3}
+  itemIcon: {fileID: 21300000, guid: bed19c93a065d90429ea03b36b79f2d7, type: 3}
   itemDescription: buh
   itemID: 1000001
   weaponAnimator: {fileID: 22100000, guid: 0ca5176bbaa5a8c468508245bab06b65, type: 2}

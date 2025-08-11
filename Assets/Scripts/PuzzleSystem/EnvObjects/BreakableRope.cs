@@ -12,7 +12,7 @@ public class BreakableRope : MonoBehaviour
 
     public void OnDamageReceived(TakeDamageEffect hit)
     {
-        Debug.Log($"BreakableRope: OnDamageReceived hit={hit}");
+        //Debug.Log($"BreakableRope: OnDamageReceived hit={hit}");
         if (burned) return;
         if (hit.weaponElement != WeaponElement.Fire && hit.fireDamage <= 0f) return;
 

@@ -10,6 +10,8 @@ public class FlammableObject : MonoBehaviour
 
     public void OnDamageReceived(TakeDamageEffect hit)
     {
+        //
+        //.Log("flameable object hit: " + gameObject.name);
         if (burning) return;
 
         bool isFire = hit.weaponElement == WeaponElement.Fire || hit.fireDamage > 0f;

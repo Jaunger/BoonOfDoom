@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.TextCore.Text;
@@ -39,7 +40,7 @@ public class AICharacterManager : CharacterManager
         set
         {
             base.isDead = value;
-            Debug.Log("died");
+            //Debug.Log("died");
             if (isDead)
             {
                 aiCharacterInventoryManager.DropItem();
@@ -47,7 +48,7 @@ public class AICharacterManager : CharacterManager
                 PlayerManager player = FindFirstObjectByType<PlayerManager>();
                 if (player == null)
                 {
-                    Debug.LogError("PlayerManager not found in the scene.");
+                    //Debug.LogError("PlayerManager not found in the scene.");
                     return;
                 }
 
@@ -67,6 +68,7 @@ public class AICharacterManager : CharacterManager
                 if (player.playerInventoryManager.currentRightWeapon != null)
                 {
                     player.playerInventoryManager.currentRightWeapon.GrantWeaponEXP(aiCharacterCombatManager.weaponEXPReward);
+                    player.playerInventoryManager.weaponsInRightHandSlots.FirstOrDefault(w => w.itemID == player.playerInventoryManager.currentRightWeapon.itemID)?.GrantWeaponEXP(aiCharacterCombatManager.weaponEXPReward);
                 }
             }
         }

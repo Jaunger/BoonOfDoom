@@ -41,7 +41,7 @@ public class RangedProjectileDamageCollider : DamageCollider
     public void SetAttacker(CharacterManager who)     
     {
         attacker = who;
-        Debug.Log($"Attacker set to: {who.name}");
+        //Debug.Log($"Attacker set to: {who.name}");
         // Ignore physical collisions with attacker’s colliders
         foreach (Collider col in attacker.GetComponentsInChildren<Collider>())
         {

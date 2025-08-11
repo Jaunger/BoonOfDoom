@@ -15,6 +15,6 @@ public class FlameInfuseAction : WeaponItemAction
         else
             wm.ActivateFlame();     // starts drain; auto-off at 0 Focus
 
-        Debug.Log($"Player {player.gameObject.name} toggled flame on weapon {weapon.itemName}.");
+        //Debug.Log($"Player {player.gameObject.name} toggled flame on weapon {weapon.itemName}.");
     }
 }

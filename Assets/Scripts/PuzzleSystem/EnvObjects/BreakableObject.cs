@@ -15,7 +15,7 @@ public class BreakableObject : MonoBehaviour
     {
         if (broken) return;
 
-        Debug.Log($"BreakableObject: {hit.weaponType} hit with {hit.physicalDamage} damage and {hit.weaponElement} ");
+        //Debug.Log($"BreakableObject: {hit.weaponType} hit with {hit.physicalDamage} damage and {hit.weaponElement} ");
 
         /* Rule 1: HeavyImpact always breaks */
         if (hit.weaponElement == WeaponElement.HeavyImpact)

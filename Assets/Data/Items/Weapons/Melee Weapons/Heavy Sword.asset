@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Heavy Sword
   m_EditorClassIdentifier: 
   itemName: Heavy Sword
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: 2482111ff499e3744b150e7ec40ee917, type: 3}
   itemDescription: 
   itemID: 1000002
   weaponAnimator: {fileID: 22100000, guid: 8ca873d834bf0bf48b973e6bba6bd39a, type: 2}
@@ -60,6 +60,6 @@ MonoBehaviour:
   runtimeSkillTree: {fileID: 0}
   specialAbilityAction: {fileID: 11400000, guid: 054a419a7460396449163235cbdd21a8, type: 2}
   specialAbilityActionID: -1
-  specialAbilityActionAlt: {fileID: 0}
+  specialAbilityActionAlt: {fileID: 11400000, guid: 054a419a7460396449163235cbdd21a8, type: 2}
   whooshSounds: []
   blockSounds: []

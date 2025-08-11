@@ -102,7 +102,7 @@ public class PlayerUIHudManager : MonoBehaviour
         }
 
         soulsToAddText.enabled = false;
-        Debug.Log("Adding souls: " + soulsToAdd);
+        //Debug.Log("Adding souls: " + soulsToAdd);
         soulCountText.text = PlayerUIManager.instance.player.playerStatManager.souls < 0 ?
             "0" : PlayerUIManager.instance.player.playerStatManager.souls.ToString(); 
         pendingSouls = 0;
@@ -152,7 +152,7 @@ public class PlayerUIHudManager : MonoBehaviour
 
         if (weapon.itemIcon == null)
         {
-            // Debug.Log(weapon.itemName + " does not have an icon");
+            // //Debug.Log(weapon.itemName + " does not have an icon");
             rightWepSlotIcon.enabled = false;
             rightWepSlotIcon.sprite = null;
             return;
@@ -176,7 +176,7 @@ public class PlayerUIHudManager : MonoBehaviour
 
         if (weapon.itemIcon == null)
         {
-            // Debug.Log(weapon.itemName + " does not have an icon");
+            // //Debug.Log(weapon.itemName + " does not have an icon");
             leftWepSlotIcon.enabled = false;
             leftWepSlotIcon.sprite = null;
             return;
@@ -210,7 +210,7 @@ public class PlayerUIHudManager : MonoBehaviour
 
         if (quickSlotItem.itemIcon == null)
         {
-            // Debug.Log(item.itemName + " does not have an icon");
+            // //Debug.Log(item.itemName + " does not have an icon");
             quickSlotIcon.enabled = false;
             quickSlotIcon.sprite = null;
             return;

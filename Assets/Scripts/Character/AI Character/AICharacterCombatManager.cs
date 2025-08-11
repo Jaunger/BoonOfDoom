@@ -85,7 +85,7 @@ public class AICharacterCombatManager : CharacterCombatManager
                     if (Physics.Linecast(aiCharacter.characterCombatManager.lockOnTransform.position, targetCharacter.characterCombatManager.lockOnTransform.position,
                         WorldUtilityManager.instance.GetEnvLayers()))
                     {
-                        Debug.DrawLine(aiCharacter.characterCombatManager.lockOnTransform.position, targetCharacter.characterCombatManager.lockOnTransform.position);
+                        //Debug.DrawLine(aiCharacter.characterCombatManager.lockOnTransform.position, targetCharacter.characterCombatManager.lockOnTransform.position);
                     }
                     else
                     {
@@ -206,7 +206,7 @@ public class AICharacterCombatManager : CharacterCombatManager
         if (aiCharacter.idleState.idleStateMode == IdleStateMode.Sleep && !aiCharacter.isAwake)
         {
             aiCharacter.isAwake = true;
-            Debug.Log("Waking up");
+            //Debug.Log("Waking up");
             aiCharacter.characterAnimatorManager.PlayerTargetActionAnimation(aiCharacter.wakeAnimation, true);    
         }
            

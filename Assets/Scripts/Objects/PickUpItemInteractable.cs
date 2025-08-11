@@ -23,7 +23,7 @@ public class PickUpItemInteractable : Interactable
             if (itemPickupType != ItemPickupType.CharacterDrop)
                 return;
 
-            Debug.Log("Item ID: " + value);
+            //Debug.Log("Item ID: " + value);
 
             item = WorldItemDatabase.instance.GetItemByID(_itemID);
           
@@ -77,7 +77,7 @@ public class PickUpItemInteractable : Interactable
 
         base.Interact(player);
 
-        //player.characterSoundFXManager.PlaySoundFX(WorldSoundFXManager.instance.pickUpItemsSFX);
+        player.characterSoundFXManager.PlaySoundFX(WorldSoundFXManager.instance.pickUpItemsSFX);
 
         player.playerAnimatorManager.PlayerTargetActionAnimation("Pick_Up_Item_01", true);
 

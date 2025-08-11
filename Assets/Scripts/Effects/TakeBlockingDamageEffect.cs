@@ -49,7 +49,7 @@ public class TakeBlockingDamageEffect : InstantCharacterEffect
 
         base.ProcessEffect(character);
 
-        Debug.Log("Blocking");
+        //Debug.Log("Blocking");
 
         if (character.isDead)
             return;

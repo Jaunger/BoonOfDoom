@@ -112,18 +112,18 @@ public class PlayerUISkillTreeManager : MonoBehaviour
     }
     private void UpdateWeaponHeader(WeaponItem w)          
     {
-        unlockedWeapons.FirstOrDefault(x => x.itemID == w.itemID);
+        var temp = PlayerUIManager.instance.player.playerInventoryManager.weaponsInRightHandSlots.First(x => x.itemID == w.itemID);
 
         if (weaponLevelText)
-            weaponLevelText.text = $"Lv. {w.weaponLevel}";
+            weaponLevelText.text = $"Lv. {temp.weaponLevel}";
 
         if (weaponExpText)
-            weaponExpText.text = $"{w.currentWeaponEXP} / {w.maxWeaponEXP} EXP";
+            weaponExpText.text = $"{temp.currentWeaponEXP} / {temp.maxWeaponEXP} EXP";
 
         if (weaponExpSlider)
         {
-            weaponExpSlider.maxValue = w.maxWeaponEXP;
-            weaponExpSlider.value = w.currentWeaponEXP;
+            weaponExpSlider.maxValue = temp.maxWeaponEXP;
+            weaponExpSlider.value = temp.currentWeaponEXP;
         }
     }
 
@@ -243,7 +243,9 @@ public class PlayerUISkillTreeManager : MonoBehaviour
     /// </summary>
     //public void ConfirmUnlockSkill()
     //{
-    //    Debug.Log("EXISTS?");
+    //
+    //
+    //    .Log("EXISTS?");
     //    if (selectedSkillNode == null || WeaponSkillUnlockManager.instance == null) return;
 
     //    WeaponItem temp = null;

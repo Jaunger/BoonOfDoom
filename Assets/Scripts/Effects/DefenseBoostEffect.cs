@@ -8,12 +8,12 @@ public class DefenseBoostEffect : StaticCharacterEffect
     public override void ProcessStaticEffect(CharacterManager character)
     {
         character.characterStatManager.armorPhysicalDamageAbsorption += defenseBonus;
-        Debug.Log($"[Effect] Applied +{defenseBonus} defense");
+        //Debug.Log($"[Effect] Applied +{defenseBonus} defense");
     }
 
     public override void RemoveStaticEffect(CharacterManager character)
     {
         character.characterStatManager.armorPhysicalDamageAbsorption -= defenseBonus;
-        Debug.Log($"[Effect] Removed +{defenseBonus} defense");
+        //Debug.Log($"[Effect] Removed +{defenseBonus} defense");
     }
 }

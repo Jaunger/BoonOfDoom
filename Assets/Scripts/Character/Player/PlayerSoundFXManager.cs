@@ -21,7 +21,7 @@ public class PlayerSoundFXManager : CharacterSoundFXManager
     {
         base.PlayFootStepSoundFX();
 
-        Debug.Log("Footstep sound played");
+        //Debug.Log("Footstep sound played");
         WorldSoundFXManager.instance.AlertNearbyCharacterToSound(transform.position, 2); //TODO: use whereever sound is playing
     }
 }

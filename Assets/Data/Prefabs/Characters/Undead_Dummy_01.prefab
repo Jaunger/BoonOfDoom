@@ -604,7 +604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropItemChance: 10
-  droppableItems: []
+  droppableItems:
+  - {fileID: 11400000, guid: 2b5ac6e1b1adeac4bb84ef1e4b5f5e2c, type: 2}
 --- !u!1 &470978300181484352
 GameObject:
   m_ObjectHideFlags: 0

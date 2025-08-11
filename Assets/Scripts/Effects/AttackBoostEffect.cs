@@ -11,7 +11,7 @@ public class AttackBoostEffect : StaticCharacterEffect
         {
             WeaponItem weapon = player.playerInventoryManager.currentRightWeapon;
             weapon.physicalDamage += damageBonus;
-            Debug.Log($"[Effect] Applied +{damageBonus} attack to {weapon.itemName}");
+            //Debug.Log($"[Effect] Applied +{damageBonus} attack to {weapon.itemName}");
         }
     }
 
@@ -21,7 +21,7 @@ public class AttackBoostEffect : StaticCharacterEffect
         {
             WeaponItem weapon = player.playerInventoryManager.currentRightWeapon;
             weapon.physicalDamage -= damageBonus;
-            Debug.Log($"[Effect] Removed +{damageBonus} attack from {weapon.itemName}");
+            //Debug.Log($"[Effect] Removed +{damageBonus} attack from {weapon.itemName}");
         }
     }
 }

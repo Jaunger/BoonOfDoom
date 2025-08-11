@@ -13,17 +13,13 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: 
   itemName: Bow
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: 714452bb1b44f6843b0b3200de2ba2ec, type: 3}
   itemDescription: 
   itemID: 1000003
   weaponAnimator: {fileID: 22100000, guid: 413901558efe65942952cc890eae8d30, type: 2}
   weaponType: 0
   weaponModel: {fileID: 2082925001320433668, guid: b27fa2c61080450438de9982cd2e98ea, type: 3}
   weaponClass: 2
-  strengthREQ: 0
-  dexREQ: 0
-  intREQ: 0
-  faithREQ: 0
   weaponElement: 0
   physicalDamage: 72
   magicDamage: 0

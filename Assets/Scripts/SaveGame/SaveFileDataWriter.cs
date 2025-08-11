@@ -26,7 +26,7 @@ public class SaveFileDataWriter
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(saveFilePath));
-            Debug.Log("Creating save file, at save path: " + saveFilePath);
+            //Debug.Log("Creating save file, at save path: " + saveFilePath);
 
             string dataToStore = JsonUtility.ToJson(cd, true);
 

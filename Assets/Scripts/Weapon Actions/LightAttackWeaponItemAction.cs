@@ -56,7 +56,7 @@ public class LightAttackWeaponItemAction : WeaponItemAction
     {
         if (lightAttackAnimations.Count == 0)
         {
-            Debug.LogWarning("No light attacks assigned!");
+            //Debug.LogWarning("No light attacks assigned!");
             return;
         }
 
@@ -81,7 +81,7 @@ public class LightAttackWeaponItemAction : WeaponItemAction
                 // candidate for next combo
                 string nextAttack = lightAttackAnimations[lastIndex + 1];
 
-                Debug.Log($"Performing combo: {nextAttack} after {player.characterCombatManager.lastAttackAnimation}");
+                //Debug.Log($"Performing combo: {nextAttack} after {player.characterCombatManager.lastAttackAnimation}");
                     player.playerAnimatorManager
                           .PlayerTargetAttackActionAnimation(
                               weapon, attackTypes[lastIndex + 1], nextAttack, true);

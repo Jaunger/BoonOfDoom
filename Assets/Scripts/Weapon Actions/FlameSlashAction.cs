@@ -16,7 +16,7 @@ public class FlameSlashAction : WeaponItemAction
     public override void AttemptToPerformAction(PlayerManager player, WeaponItem weapon)
     {
 
-        Debug.Assert(projectilePrefab != null, "Projectile prefab is not assigned in FlameSlashAction.");
+        //Debug.Assert(projectilePrefab != null, "Projectile prefab is not assigned in FlameSlashAction.");
         if (!weapon.runtimeSkillTree.HasUnlockedNode("Flame Slash")) return;
         if (player.playerStatManager.currentFocus < focusCost) return;
 
@@ -37,7 +37,7 @@ public class FlameSlashAction : WeaponItemAction
         GameObject projObj = Instantiate(projectilePrefab, origin, rot);
 
         var proj = projObj.GetComponent<RangeProjectileDamageCollider>();
-        Debug.Assert(proj != null, "Projectile prefab does not have RangeProjectileDamageCollider component.");
+        //Debug.Assert(proj != null, "Projectile prefab does not have RangeProjectileDamageCollider component.");
         proj.characterShottingProjectile = player;
 
         proj.physicalDamage = projectileItem.physicalDamange;

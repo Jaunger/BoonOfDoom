@@ -147,14 +147,14 @@ public class CombatStanceState : AIState
             WorldUtilityManager.instance.GetEnvLayers()))
         {
             //STOP strafing/curcling, instead , move towards target
-            Debug.Log("we are colliding, ending strafe/circle");
+            //Debug.Log("we are colliding, ending strafe/circle");
             aiCharacter.characterAnimatorManager.SetAnimatorMovementParameters(0f, Mathf.Abs(strafeMoveAmount));
 
             return;
         }
 
         //Strafe
-        Debug.Log("we are strafe " );
+        //Debug.Log("we are strafe " );
 
         aiCharacter.characterAnimatorManager.SetAnimatorMovementParameters(strafeMoveAmount, 0f);   
 

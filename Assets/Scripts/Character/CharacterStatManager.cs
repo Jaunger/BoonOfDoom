@@ -28,7 +28,7 @@ public class CharacterStatManager : MonoBehaviour
         get => _currentFocus;
         set
         {
-            Debug.Log($"Setting focus: {value} (max: {maxFocus})");
+            //Debug.Log($"Setting focus: {value} (max: {maxFocus})");
             float clamped = Mathf.Clamp(value, 0f, maxFocus);
             float last = _currentFocus;
             _currentFocus = clamped;

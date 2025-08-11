@@ -53,9 +53,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1f53a5fc6bd934e46a5d8cfa8fd27b64, type: 3}
   - {fileID: 8300000, guid: e82879725b40ce444bca27d19a75f42c, type: 3}
   - {fileID: 8300000, guid: 2b019c6187fca1e48b47e28c891dc66c, type: 3}
-  pickUpItemsSFX: {fileID: 0}
+  pickUpItemsSFX: {fileID: 8300000, guid: 598ab1eb36fe53b499b1ad01afee251b, type: 3}
   rollSFX: {fileID: 8300000, guid: 8f3c9e020c1dc9b4daa1596e601a8a2c, type: 3}
-  HealingSFX: {fileID: 0}
+  HealingSFX: {fileID: 8300000, guid: 960b5ec45b0e2c246a5ab265806d7503, type: 3}
+  releaseArrowSFX:
+  - {fileID: 8300000, guid: 21f547c3f107e2a40a2841600f27fd6d, type: 3}
+  notchArrowSFX: []
 --- !u!82 &4321850967777914642
 AudioSource:
   m_ObjectHideFlags: 0
