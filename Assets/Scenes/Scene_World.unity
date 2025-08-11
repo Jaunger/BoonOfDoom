@@ -131745,7 +131745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7903f00e99748eb498e7701f9baa4c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Left and Right button to switch weapons
+  interactText: Left and Right button(T/Q keyboard) to switch weapons
   interactCollider: {fileID: 1100163656}
 --- !u!1 &1100953918
 GameObject:
@@ -198104,7 +198104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7903f00e99748eb498e7701f9baa4c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: R1 to shoot primary, L2 aim, can shoot while locked on
+  interactText: R1 (mouse1) to shoot primary, L2 (mouse2) aim, can shoot while locked
+    on
   interactCollider: {fileID: 1621659718}
 --- !u!1001 &1625674481
 PrefabInstance:
@@ -242102,7 +242103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7903f00e99748eb498e7701f9baa4c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: use Triangle to Pick Up/ Interact
+  interactText: use Triangle (V) to Pick Up/ Interact
   interactCollider: {fileID: 1977804975}
 --- !u!1001 &1979352723
 PrefabInstance:
