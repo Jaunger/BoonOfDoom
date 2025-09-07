@@ -4147,7 +4147,7 @@ GameObject:
   - component: {fileID: 3151305227118019175}
   - component: {fileID: 3150787504295344572}
   m_Layer: 0
-  m_Name: Site Of Grace Title
+  m_Name: Brazier Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4200,7 +4200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Site Of Grace
+  m_text: BRAZIER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4853,7 +4853,7 @@ GameObject:
   - component: {fileID: 5615338958890882300}
   - component: {fileID: 8869106869432037905}
   m_Layer: 0
-  m_Name: Site Of Grace Manager
+  m_Name: Brazier Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6776,7 +6776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3234044082506513931}
   m_Layer: 0
-  m_Name: Site Of Grace Window
+  m_Name: Brazier Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
