@@ -607,6 +607,9 @@ public class PlayerInputManager : MonoBehaviour
 
             WeaponItem currentWeapon = player.playerInventoryManager.currentRightWeapon;
 
+            if (currentWeapon.weaponClass == WeaponClass.Bow)
+                return;
+
             if (currentWeapon != null && currentWeapon.specialAbilityAction != null)
             {
                 player.playerCombatManager.PerformWeaponBasedAction(currentWeapon.specialAbilityAction, currentWeapon);

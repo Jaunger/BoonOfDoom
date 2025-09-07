@@ -60,7 +60,7 @@ MonoBehaviour:
   runtimeSkillTree: {fileID: 0}
   specialAbilityAction: {fileID: 11400000, guid: 0dfdcee6aed00f244ad3e7db4bdfa6a1, type: 2}
   specialAbilityActionID: -1
-  specialAbilityActionAlt: {fileID: 0}
+  specialAbilityActionAlt: {fileID: 11400000, guid: 0dfdcee6aed00f244ad3e7db4bdfa6a1, type: 2}
   whooshSounds: []
   blockSounds: []
   drawSfx: []
