@@ -13,18 +13,18 @@ A Unity-based action RPG game featuring deep combat mechanics, weapon progressio
 #### **Character Management**
 - **Player System**: Comprehensive player controller with locomotion, combat, inventory, and equipment management
 - **AI System**: Advanced AI with patrol paths, boss fights, and character spawning
-- **Character Stats**: Health, stamina, souls (currency), and focus management
+- **Character Stats**: Health, stamina, runes (currency), and focus management
 
 #### **Combat System**
-- **Weapon Classes**: Straight Sword, Great Axe, Bow, Unarmed
+- **Weapon Classes**: Straight Sword, Great Axe, Bow
 - **Attack Types**: Light attacks, heavy attacks, charged attacks, running attacks, rolling attacks
-- **Combat Mechanics**: Poise system, blocking, dodging, two-handing weapons
-- **Projectile System**: Arrows, bolts, and magical projectiles
+- **Combat Mechanics**: Poise system, blocking, dodging, weapon abilities
+- **Projectile System**: Arrows and magical projectiles
 
 #### **Weapon Progression**
 - **Skill Trees**: Unique progression trees for each weapon type
 - **Weapon Levels**: Experience-based weapon leveling system
-- **Special Abilities**: Unlockable weapon abilities (Flame, Smash, Throw)
+- **Special Abilities**: Unlockable weapon abilities (Flame, Smash)
 - **Elemental Effects**: Fire, Lightning, and Heavy Impact damage types
 
 #### **Puzzle System**
@@ -35,7 +35,7 @@ A Unity-based action RPG game featuring deep combat mechanics, weapon progressio
 #### **Save System**
 - **Multiple Save Slots**: 3 character save slots
 - **Persistent Data**: Character stats, equipment, world state, boss progress
-- **Death System**: Souls drop at death location for retrieval
+- **Death System**: Runes drop at death location for retrieval
 
 ## 🎯 Key Features
 
@@ -175,7 +175,7 @@ Assets/Data/
 ### **Save System**
 - **Multiple Slots**: 3 independent character save slots
 - **Persistent World**: Boss states, item collection, puzzle progress
-- **Death Recovery**: Retrieve lost souls from death location
+- **Death Recovery**: Retrieve lost runes from death location
 - **Checkpoint System**: Brazier rest points for progression
 
 ## 🚀 Getting Started
@@ -197,9 +197,8 @@ Assets/Data/
 - **Heavy Attack**: Right Click or RT
 - **Block**: Q or LB
 - **Dodge**: Space or B
-- **Interact**: E or A
+- **Interact**: E or Y
 - **Lock-On**: Tab or Right Stick Click
-- **Two-Hand**: Y or Triangle
 
 ## 📁 Project Structure
 
