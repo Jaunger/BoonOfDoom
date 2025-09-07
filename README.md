@@ -185,7 +185,7 @@ Assets/Data/
 - Visual Studio 2022 or Rider (recommended)
 
 ### **Installation**
-1. Clone the repository
+1. Clone the repository **(IMPORTANT: make sure you have Git LFS installed or assets and files will not import correctly!)**
 2. Open the project in Unity 6.0
 3. Wait for package installation to complete
 4. Open `Assets/Scenes/Scene_Main_Menu.unity` to start
